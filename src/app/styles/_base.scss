@@ -24,14 +24,14 @@ body {
   min-height: 100%;
   margin: 0;
   background-color: $cl-white;
-  font-weight: 400;
+  font-weight: 500;
+  color: $cl-black;
   font-size: $font-size;
   font-family: $font-family;
   line-height: $line-height;
 
   @media (max-width: $sm) {
     font-size: $font-size-sm;
-    line-height: $line-height-sm;
   }
 
   &._modal-show {

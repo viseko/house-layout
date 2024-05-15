@@ -1,6 +1,11 @@
 // Цветовая палитра
-$cl-white: #ffffff;
-$cl-black: #000000;
+$cl-white: #F4F6F5;
+$cl-black: #2C2D35;
+$cl-green-light: #E1EDE6;
+$cl-green: #598D66;
+$cl-green-dark: #376B44;
+$cl-background: #F4F6F5;
+$cl-gray: #86928B;
 
 // Контрольные точки
 $xs: 400px;
@@ -11,18 +16,17 @@ $xl: 1200px; // desktop
 $xxl: 1400px;
 
 // Базовые размеры
-$rem: 8px; // единица модульной сетки
+$rem: 5px; // единица модульной сетки
 $min-width: 320px; // мин. ширина контейнера
-$container-width: 1328px; // макс. шиирина контейнера
-$container-padding: 2rem; // отступы контейнера
+$container-width: 1140px; // макс. шиирина контейнера
+$container-padding: 3rem; // отступы контейнера
 
 // Текст
-$font-family: "Roboto", helvetica, arial, sans-serif; // Шрифт по умолчанию
-$font-size: 20px; // кегль на десктопе
-$font-size-sm: 16px; // кегль на мобилках
-$line-height-sm: 3rem; // интерлиньяж на мобилках
-$line-height: 4rem; // интерлиньяж на десктопе
-$p-margin: 3rem; // отступы между абзацев
+$font-family: "Raleway", helvetica, arial, sans-serif; // Шрифт по умолчанию
+$font-size: 18px; // кегль на десктопе
+$font-size-sm: 14px; // кегль на мобилках
+$line-height: 150%; // интерлиньяж на десктопе
+$p-margin: 2rem; // отступы между абзацев
 
 // Анимации и переходы
 $bezier: cubic-bezier(0, 0, 0.4, 1); // станд. функция перехода

@@ -25,9 +25,9 @@ const path = {
 		img: `${publicFolder}/assets/img/`,
 	},
 	raw: {
-		fonts: `${rawFolder}/raw/fonts/`,
-		img: `${rawFolder}/raw/img/**/*.{jpg,jpeg,png}`,
-		svgIcons: `${rawFolder}/raw/svg-icons/*.svg`
+		fonts: `${rawFolder}/fonts/`,
+		img: `${rawFolder}/img/**/*.{jpg,jpeg,png}`,
+		svgIcons: `${rawFolder}/svg-icons/*.svg`
 	},
 	watch: {
 		js: `${srcFolder}/**/*.js`,

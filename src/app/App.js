@@ -1,13 +1,13 @@
-import adaptiveMove from "./modules/adaptive-move.js";
-import checkNavigator from "./modules/check-navigator.js";
-import calcScrollbarWidth from "./modules/calc-scrollbar-width.js";
+// import adaptiveMove from "./modules/adaptive-move.js";
+// import checkNavigator from "./modules/check-navigator.js";
+// import calcScrollbarWidth from "./modules/calc-scrollbar-width.js";
 import calcVh from "./modules/calc-vh.js";
 
 const App = {
   modules: [
-    adaptiveMove,
-    checkNavigator,
-    calcScrollbarWidth,
+    // adaptiveMove,
+    // checkNavigator,
+    // calcScrollbarWidth,
     calcVh
   ],
 
