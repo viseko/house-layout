@@ -1,0 +1,91 @@
+//- "Гибкое" поле ввода
+mixin field(options)
+  -var type = options.type || "text"
+  -var id = options.id 
+  -var name = options.name 
+  -var required = options.required 
+  -var placeholder = options.placeholder
+  -var inputPlaceholder = options.inputPlaceholder
+  -var className = options.className 
+  -var value = options.value || ""
+  -var icon = options.icon
+  -var disabled = options.disabled || false
+  -var valid = options.valid
+  -var minLength = options.minLength
+  -var errorText = options.errorText
+
+  -var jsClass = ""
+
+  if (type === "text" || type === "textarea")
+    -jsClass = "js-input"
+  if (type === "tel")
+    -jsClass = "js-input-phone"
+  if (type === "email")
+    -jsClass = "js-input-email"
+
+  -var classNames = [className]
+
+  if (jsClass)
+    -classNames.push(jsClass)
+  if (valid === true)
+    -classNames.push("_success")
+  if (valid === false)
+    -classNames.push("_error")
+  if (type === "textarea")
+    -classNames.push("field--textarea")
+  if (placeholder)
+    -classNames.push("field--placeholder")
+
+  .field(class=classNames.join(" "))
+    if (type === "textarea")
+      textarea.field__input.field__input--textarea(
+        required=required,
+        placeholder!=inputPlaceholder,
+        name=name,
+        id=id,
+        autocomplete="off",
+        disabled=disabled)=value
+    else 
+      input.field__input(type=type,
+        id=id,
+        name=name,
+        required=required,
+        value=value,
+        placeholder!=inputPlaceholder,
+        disabled=disabled,
+        minLength=minLength)
+    if (placeholder)
+      .field__placeholder=placeholder
+    .field__error(data-role="error")=errorText
+    //- .field__icon
+    //-   .field__icon-success
+    //-     +icon("check", 16, 16)
+    //-   .field__icon-error
+    //-     +icon("close", 16, 16)
+
+//- Поле ввода пароля
+mixin field-password(options)
+  -var id = options.id
+  -var name = options.name || "password" 
+  -var placeholder = options.placeholder
+  -var repeat = options.repeat
+  -var className = options.className
+
+  -var classNames = [className]
+  if (placeholder)
+    -classNames.push("field--placeholder")
+
+  .field.js-input-password(class=classNames.join(" "))
+    if (repeat)
+      input.field__input(type="password" name=name required data-repeat=repeat id=id)
+    else
+      input.field__input(type="password" name=name required id=id)
+    if (placeholder)
+      .field__placeholder=placeholder
+    .field__error(data-role="error")
+    button.field__show-hide(type="button")
+      span.visually-hidden Скрыть/показать пароль
+      span.field__icon-show 
+        +icon("eye-off", 24, 24)
+      span.field__icon-hide
+        +icon("eye", 24, 24)

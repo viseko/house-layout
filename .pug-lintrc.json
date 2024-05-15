@@ -1,0 +1,23 @@
+{
+  "disallowDuplicateAttributes": true,
+  "disallowMultipleLineBreaks": true,
+  "disallowSpaceAfterCodeOperato": true,
+  "disallowStringConcatenation": true,
+  "requireIdLiteralsBeforeAttributes": true,
+  "requireLowerCaseTags": true,
+  "validateAttributeQuoteMarks": "\"",
+  "validateDivTags": true,
+  "requireSpecificAttributes": [
+    {
+      "img": [
+        "src",
+        "alt"
+      ]
+    },
+    {
+      "a": [
+        "href"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+mixin grid(data={})
+  div(
+    class=data.className,
+    class=`grid-${data.columns}`
+    class=`gap-${data.gap}`
+    class=(data.breakpoints && data.breakpoints.xl && data.breakpoints.xl.gap ? `gap-xl-${data.breakpoints.xl.gap}` : null)
+    class=(data.breakpoints && data.breakpoints.lg && data.breakpoints.lg.gap ? `gap-lg-${data.breakpoints.lg.gap}` : null)
+    class=(data.breakpoints && data.breakpoints.md && data.breakpoints.md.gap ? `gap-md-${data.breakpoints.md.gap}` : null)
+    class=(data.breakpoints && data.breakpoints.sm && data.breakpoints.sm.gap ? `gap-sm-${data.breakpoints.sm.gap}` : null)
+    class=(data.breakpoints && data.breakpoints.xs && data.breakpoints.xs.gap ? `gap-xs-${data.breakpoints.xs.gap}` : null)
+    class=(data.breakpoints && data.breakpoints.xl && data.breakpoints.xl.columns ? `grid-xl-${data.breakpoints.xl.columns}` : null)
+    class=(data.breakpoints && data.breakpoints.lg && data.breakpoints.lg.columns ? `grid-lg-${data.breakpoints.lg.columns}` : null)
+    class=(data.breakpoints && data.breakpoints.md && data.breakpoints.md.columns ? `grid-md-${data.breakpoints.md.columns}` : null)
+    class=(data.breakpoints && data.breakpoints.sm && data.breakpoints.sm.columns ? `grid-sm-${data.breakpoints.sm.columns}` : null)
+    class=(data.breakpoints && data.breakpoints.xs && data.breakpoints.xs.columns ? `grid-xs-${data.breakpoints.xs.columns}` : null)
+  )
+    block

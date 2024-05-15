@@ -1,0 +1,19 @@
+@for $i from 1 through 14 {
+  .pb-#{$i} {
+    padding-bottom: #{$i}rem;
+  }
+
+  .pt-#{$i} {
+    padding-top: #{$i}rem;
+  }
+
+  @media (max-width: $sm) {
+    .pb-sm-#{$i} {
+      padding-bottom: #{$i}rem;
+    }
+
+    .pt-sm-#{$i} {
+      padding-top: #{$i}rem;
+    }
+  }
+}

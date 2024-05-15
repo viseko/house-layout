@@ -1,0 +1,18 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($cl-black, 80%);
+  opacity: 0%;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.5s opacity;
+
+  body._modal-show & {
+    opacity: 100%;
+    pointer-events: all;
+  }
+}

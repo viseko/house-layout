@@ -1,0 +1,13 @@
+a {
+  font-size: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  @include hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,24 @@
+mixin _button-inner(data)
+  if (data.icon)
+    if (data.icon.reverse)
+      +icon(data.icon.name, data.icon.width, data.icon.height)
+      span!=data.text
+    else
+      span!=data.text
+      +icon(data.icon.name, data.icon.width, data.icon.height)
+  else 
+    span!=data.text
+
+mixin button(data={})
+  if (data.href)
+    a.btn(
+      href=data.href
+      class=data.className
+      target=(data.blank ? "_blank" : null)
+      rel=(data.blank ? "noopener noreferrer" : null)
+    )&attributes(data.attributes)
+      +_button-inner(data)
+      
+  else
+    button(class=data.className)&attributes(data.attributes)
+      +_button-inner(data)
