@@ -11,6 +11,8 @@ const App = {
     calcVh
   ],
 
+  components: [],
+
   // Размеры для вычисления mathchMedia и брейкпойнтов
   sizes: {
     xs: 400,
@@ -31,22 +33,23 @@ const App = {
     );
   },
 
-  // Инициализация html-элемента по селектору через функцию
-  install(selector, constructor, options = {}) {
+  // Инициализация html-элемента по селектору через класс
+  installClass(selector, constructor, options = {}) {
     const elems = document.querySelectorAll(selector);
     const initializatedObjs = [];
 
     if (elems.length > 0) {
       elems.forEach(elem => {
-        initializatedObjs.push(new constructor(elem, options));
+        const component = initializatedObjs.push(new constructor(elem, options));
+        component && this.components.push(component);
       });
     }
 
     return initializatedObjs;
   },
 
-  // Инициализация html-элемента по селектору через класс
-  installClass(selector, func, options = {}) {
+  // Инициализация html-элемента по селектору через функцию
+  install(selector, func, options = {}) {
     const elems = document.querySelectorAll(selector);
     const initializatedObjs = [];
 

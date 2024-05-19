@@ -47,4 +47,11 @@
       </clipPath>
     </defs>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 18" id="menu">
+    <path fill="currentColor" fill-rule="evenodd" d="M.7 16.6a1 1 0 0 1 1-1h18.7a1 1 0 0 1 0 1.9H1.6a1 1 0 0 1-1-1ZM.7 9a1 1 0 0 1 1-1h18.7a1 1 0 0 1 0 1.9H1.6a1 1 0 0 1-1-1Zm0-7.5a1 1 0 0 1 1-1h18.7a1 1 0 0 1 0 1.9H1.6a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" id="close">
+    <path fill="currentColor" fill-rule="evenodd" d="M6.8 6.8a1 1 0 0 1 1.5 0l15 15a1 1 0 0 1-1.6 1.4l-15-15a1 1 0 0 1 0-1.4Z" clip-rule="evenodd"/>
+    <path fill="currentColor" fill-rule="evenodd" d="M23.3 6.8a1 1 0 0 1 0 1.5l-15 15a1 1 0 0 1-1.5-1.6l15-15a1 1 0 0 1 1.4 0Z" clip-rule="evenodd"/>
+  </symbol>
 </svg>

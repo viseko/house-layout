@@ -1,0 +1,19 @@
+mixin page-header(data={})
+  header.page-header.js-header(class=className)
+    .container.page-header__container
+      .page-header__logo
+        +logo
+      .page-header__main
+        +menu-button({
+          className: "page-header__menu-button"
+        })
+        nav.page-header__nav
+          ul.page-header__nav-list
+            li
+              a.page-header__nav-link(href="#") Репродукции
+            li
+              a.page-header__nav-link(href="#") Новинки
+            li
+              a.page-header__nav-link(href="#") О нас
+        a.page-header__cart-button(type="button" title="Перейти в корзину" href="#")
+          +icon("cart", 24, 24)

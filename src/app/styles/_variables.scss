@@ -6,11 +6,12 @@ $cl-green: #598D66;
 $cl-green-dark: #376B44;
 $cl-background: #F4F6F5;
 $cl-gray: #86928B;
+$cl-gray-dark: #4C5866;
 
 // Контрольные точки
 $xs: 400px;
 $sm: 576px; // mobile
-$md: 768px; 
+$md: 730px; 
 $lg: 992px; // tablet
 $xl: 1200px; // desktop
 $xxl: 1400px;
@@ -30,3 +31,11 @@ $p-margin: 2rem; // отступы между абзацев
 
 // Анимации и переходы
 $bezier: cubic-bezier(0, 0, 0.4, 1); // станд. функция перехода
+
+:root {
+  --container-padding: 33px;
+
+  @media (max-width: $sm) {
+    --container-padding: 15px;
+  }
+}

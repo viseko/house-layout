@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__image {
+    width: 35px;
+    height: 35px;
+  }
+
+  &__text {
+    color: $cl-green;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}

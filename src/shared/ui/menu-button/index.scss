@@ -1,0 +1,56 @@
+.menu-button {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  color: $cl-black;
+  transition: color 0.3s;
+  outline: 0;
+  background-color: transparent;
+
+  @include button-hover {
+    color: $cl-green;
+  }
+
+  &:not(:disabled):focus-visible {
+    background-color: #D4E8D9;
+  }
+
+  &:not(:disabled):active {
+    color: $cl-green-dark;
+    opacity: 1;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform $bezier 0.3s, opacity 0.3s;
+    transform: translate(-50%, -50%);
+
+    &:nth-child(1) {
+      width: 21px;
+      height: 17px;
+    }
+
+    &:nth-child(2) {
+      width: 20px;
+      height: 20px;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+
+  body._menu-open & svg {
+    &:nth-child(1) {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0);
+    }
+
+    &:nth-child(2) {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
