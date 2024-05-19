@@ -1,0 +1,15 @@
+mixin section-hero(data={})
+  section.m-section
+    .container
+      .section-hero(class=data.className)
+        figure.section-hero__image
+          img(
+            src="@img/hero/main.png",
+            srcset="@img/hero/main@2x.png 2x",
+            width="",
+            height="",
+            alt="")
+        .section-hero__main
+          h1.section-hero__title Реплики картин от&nbsp;<strong>Ink. House</strong>
+          .section-hero__intro Высокое качество отрисовки на&nbsp;плотной бумаге или льняном холсте. Редкие произведения, доступные цены.
+          a.btn(href="#") Продукция

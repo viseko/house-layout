@@ -1,29 +1,44 @@
-button,
-.btn {
+button:not(.reset-button),
+.btn:not(.reset-button) {
   display: inline-block;
-  padding: 8px 16px;
-  border: 0;
+  padding: 20px 59px;
+  color: $cl-green;
+  font-size: 20px;
+  line-height: auto;
+  border: 1px solid $cl-green;
   border-radius: 4px;
-  font-size: 16px;
-  line-height: 24px;
   user-select: none;
   cursor: pointer;
+  background-color: transparent;
   transition: 
     background-color 0.3s,
     color 0.3s;
 
-  @media (max-width: $sm) {
-    padding: 4px 8px;
-    font-size: 14px;
-    line-height: 16px;
+  @media (max-width: $lg) {
+    padding: 17px 49px;
+  }
+
+  @media (max-width: $md) {
+    padding: 14px 40px;
+  }
+
+  @media (max-width: $xs) {
+    padding: 14px 28px;
+    font-size: 18px;
   }
 
   &:hover {
-    opacity: 0.9;
+    color: $cl-white;
+    background-color: $cl-green;
+  }
+
+  &:focus-visible {
+    color: $cl-green;
+    background-color: #D4E8D9;
   }
 
   &:active {
-    opacity: 0.7;
+    background-color: $cl-green-dark;
   }
 
   &:disabled {
