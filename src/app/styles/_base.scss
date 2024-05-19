@@ -174,3 +174,12 @@ ul,
 ol {
   @include reset-list;
 }
+
+a {
+  transition: color 0.3s;
+
+  @include hover {
+    opacity: 0.7;
+    color: $cl-green-dark;
+  }
+}

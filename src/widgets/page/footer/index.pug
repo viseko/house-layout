@@ -1,3 +1,57 @@
 mixin page-footer(data={})
   footer.page-footer
-    .container
+    .container.page-footer__container
+      .page-footer__main 
+        +logo
+        .page-footer__tel.d-xs-none
+          a(href="tel:+79995435454") +7 (999) 543-54-54
+          .text-label Мастерская
+      nav.page-footer__nav 
+        ul.page-footer__nav-list
+          li.d-none.d-xs-block
+            .page-footer__tel
+              a(href="tel:+79995435454") +7 (999) 543-54-54
+              .text-label Мастерская
+          li 
+            ul.page-footer__nav-sublist
+              li 
+                a.page-footer__nav-link(href="#") Репродукции
+              li
+                a.text-label(href="#") Франция
+              li
+                a.text-label(href="#") Германия
+              li
+                a.text-label(href="#") Англия
+          li 
+            ul.page-footer__nav-sublist
+              li 
+                a.page-footer__nav-link(href="#") Новинки
+              li
+                a.text-label(href="#") 2021
+              li
+                a.text-label(href="#") 2022
+          li 
+            ul.page-footer__nav-sublist
+              li 
+                a.page-footer__nav-link(href="#") О нас
+              li
+                a.text-label(href="#") Художники
+              li
+                a.text-label(href="#") Менеджеры
+      .page-footer__bottom 
+        ul.page-footer__socials
+          li 
+            a.page-footer__socials-link(href="#") 
+              span.visually-hidden Facebook 
+              +icon("facebook", 24, 24)
+          li 
+            a.page-footer__socials-link(href="#") 
+              span.visually-hidden Instagram 
+              +icon("instagram", 24, 24)
+          li 
+            a.page-footer__socials-link(href="#") 
+              span.visually-hidden Youtube 
+              +icon("youtube", 24, 24)
+        .page-footer__copyright
+          span Ink. House &reg;
+          span All rights reserved

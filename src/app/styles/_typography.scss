@@ -1,0 +1,9 @@
+.text-label {
+  color: $cl-gray;
+  font-size: 18px;
+
+  @media (max-width: $sm) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,147 @@
+.page-footer {
+  padding: 24px 0;
+  background-color: $cl-green-light;
+
+  @media (max-width: $xs) {
+    padding: 20px 0;
+  }
+
+  &__container {
+    display: flex;
+
+    @media (max-width: $lg) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    margin-right: 115px - 24px;
+
+    @media (max-width: 1440px) {
+      margin-right: calc(7.98vw - 24px);
+    }
+
+    @media (max-width: $lg) {
+      width: 100%;
+      flex-direction: row;
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+
+    @media (max-width: $xs) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__tel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    a {
+      color: inherit;
+
+      @media (max-width: $sm) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__nav {
+    @media (max-width: $md) {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: $xs) {
+      margin-bottom: 20px;
+    }
+
+    &-list {
+      display: flex;
+      align-items: flex-start;
+      gap: 60px;
+  
+      @media (max-width: 1440px) {
+        gap: 4.16vw;
+      }
+
+      @media (max-width: $lg) {
+        gap: 60px;
+      }
+
+      @media (max-width: $md) {
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      @media (max-width: $xs) {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 20px 40px;
+      }
+    }
+
+    &-sublist {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    &-link {
+      color: inherit;
+      font-size: 20px;
+
+      @media (max-width: $xs) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+
+    @media (max-width: $md) {
+      align-items: center;
+      width: 100%;
+      padding-top: 15px;
+      text-align: center;
+      border-top: 1px solid #C3D1C6;
+    }
+
+    @media (max-width: $xs) {
+      padding-top: 19px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 30px;
+
+    &-link {
+      color: inherit;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: $cl-gray;
+    font-size: 12px;
+    line-height: 120%;
+
+    @media (max-width: $md) {
+      flex-direction: row;
+      gap: .4em;
+    }
+  }
+}
