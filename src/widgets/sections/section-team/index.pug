@@ -1,2 +1,14 @@
 mixin section-team(data={})
-  .section-team(class=data.className)
+  section.m-section
+    .container
+      .section-team
+        figure.section-team__image
+          img(
+            src="@img/team/main.png",
+            srcset="@img/team/main@2x.png 2x",
+            alt="")
+        .section-team__main
+          h2.text-h2 Наша команда
+          div
+            p Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что консультация с&nbsp;широким активом.
+          +team-array

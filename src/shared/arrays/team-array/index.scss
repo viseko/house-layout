@@ -1,0 +1,19 @@
+.team {
+  &-array {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media (max-width: $sm) {
+      gap: 25px;
+    }
+  }
+
+  &-item {
+    width: 80px;
+    height: 80px;
+    background-color: $cl-gray;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
