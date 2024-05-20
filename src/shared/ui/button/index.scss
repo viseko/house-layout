@@ -10,6 +10,7 @@ button:not(.reset-button),
   user-select: none;
   cursor: pointer;
   background-color: transparent;
+  outline: 0;
   transition: 
     background-color 0.3s,
     color 0.3s;

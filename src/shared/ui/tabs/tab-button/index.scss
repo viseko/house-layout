@@ -1,0 +1,28 @@
+.tab-button {
+  padding: 10px 20px;
+  color: $cl-black;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #D4E8D9;
+  transition: color 0.3s, background-color 0.3s;
+  outline: 0;
+
+  @media (max-width: $sm) {
+    font-size: 18px;
+  }
+
+  &:hover:not(:disabled) {
+    color: $cl-white;
+    background-color: $cl-green;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px $cl-green;
+  }
+
+  &:disabled,
+  &:active:not(:disabled) {
+    color: $cl-white;
+    background-color: $cl-green-dark;
+  }
+}

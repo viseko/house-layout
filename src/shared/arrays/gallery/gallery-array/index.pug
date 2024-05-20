@@ -1,0 +1,4 @@
+mixin gallery-array(data={})
+  .gallery-array(class=data.className)
+    each card in data.list
+      +gallery-card({country: data.country, ...card})

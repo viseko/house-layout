@@ -1,2 +1,160 @@
 mixin section-gallery(data={})
-  .section-gallery(class=data.className)
+  section.m-section
+    .container
+      .section-gallery(class=data.className)
+        header.section-gallery__header
+          h2.text-h2 Репродукции
+          .section-gallery__nav
+            +tab-nav({
+              bind: "gallery",
+              list: [
+                "Франция",
+                "Германия",
+                "Англия"
+              ]
+            })
+        +tabs({id: "gallery"})
+          .swiper-slide#france
+            +gallery-array({
+              country: "france",
+              list: [
+                {
+                  img: "01",
+                  author: "Марсель Руссо",
+                  title: "Охота Амура",
+                  type: "Холст, масло (50&times;80)",
+                  price: "14&nbsp;500 руб",
+                },
+                {
+                  img: "02",
+                  author: "Анри Селин",
+                  title: "Дама с&nbsp;собачкой",
+                  type: "Акрил, бумага (50&times;80)",
+                  price: "16&nbsp;500 руб",
+                },
+                {
+                  img: "03",
+                  author: "Франсуа Дюпон",
+                  title: "Процедура",
+                  type: "Цветная литография (40&times;60)",
+                  price: "20&nbsp;000 руб",
+                },
+                {
+                  img: "04",
+                  author: "Луи Детуш",
+                  title: "Роза",
+                  type: "Бумага, акрил (50&times;80)",
+                  price: "12&nbsp;000 руб",
+                },
+                {
+                  img: "05",
+                  author: "12 000 руб",
+                  title: "Птичья трапеза",
+                  type: "Цветная литография (40&times;60)",
+                  price: "22&nbsp;500 руб",
+                },
+                {
+                  img: "06",
+                  author: "Пьер Моранж",
+                  title: "Пейзаж с&nbsp;рыбой",
+                  type: "Цветная литография (40&times;60)",
+                  price: "20&nbsp;000 руб",
+                },
+              ]
+            })
+          .swiper-slide#germany
+            +gallery-array({
+              country: "germany",
+              list: [
+                {
+                  img: "01",
+                  author: "Курт Вернер",
+                  title: "Над городом",
+                  type: "Цветная литография (40&times;60)",
+                  price: "16&nbsp;000 руб",
+                },
+                {
+                  img: "02",
+                  author: "Макс Рихтер",
+                  title: "Птенцы",
+                  type: "Холст, масло (50&times;80)",
+                  price: "14&nbsp;500 руб",
+                },
+                {
+                  img: "03",
+                  author: "Мартин Майер",
+                  title: "Среди листьев",
+                  type: "Цветная литография (40&times;60)",
+                  price: "20&nbsp;000 руб",
+                },
+                {
+                  img: "04",
+                  author: "Герман Беккер",
+                  title: "Яркая птица",
+                  type: "Цветная литография (40&times;60)",
+                  price: "13&nbsp;000 руб",
+                },
+                {
+                  img: "05",
+                  author: "Вульф Бауэр",
+                  title: "Дятлы",
+                  type: "Бумага, акрил (50&times;80)",
+                  price: "20&nbsp;000 руб",
+                },
+                {
+                  img: "06",
+                  author: "Вальтер Хартманн",
+                  title: "Большие воды",
+                  type: "Бумага, акрил (50&times;80)",
+                  price: "23&nbsp;000 руб",
+                },
+              ]
+            })
+          .swiper-slide#england
+            +gallery-array({
+              country: "england",
+              list: [
+                {
+                  img: "01",
+                  author: "Пол Смит",
+                  title: "Дикий зверь",
+                  type: "Акварель, бумага (50&times;80)",
+                  price: "19&nbsp;500 руб",
+                },
+                {
+                  img: "02",
+                  author: "Джон Уайт",
+                  title: "Скалистый берег",
+                  type: "Цветная литография (40&times;60)",
+                  price: "17&nbsp;500 руб",
+                },
+                {
+                  img: "03",
+                  author: "Джим Уотсон",
+                  title: "Река и&nbsp;горы",
+                  type: "Акварель, бумага (50&times;80)",
+                  price: "20&nbsp;500 руб",
+                },
+                {
+                  img: "04",
+                  author: "Юджин Зиллион",
+                  title: "Белый попугай",
+                  type: "Цветная литография (40&times;60)",
+                  price: "15&nbsp;500 руб",
+                },
+                {
+                  img: "05",
+                  author: "Эрик Гиллман",
+                  title: "Ночная рыба",
+                  type: "Бумага, акрил (50&times;80)",
+                  price: "12&nbsp;500 руб",
+                },
+                {
+                  img: "06",
+                  author: "Альфред Барр",
+                  title: "Рыжий кот",
+                  type: "Цветная литография (40&times;60)",
+                  price: "21&nbsp;000 руб",
+                },
+              ]
+            })

@@ -1,0 +1,26 @@
+.section-gallery {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    @media (max-width: $md) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__nav {
+    @include remove-scrollbar;
+
+    margin: 0 calc(var(--container-padding) * -1);
+    padding: 0 var(--container-padding);
+    overflow: auto;
+
+    @media (max-width: $md) {
+      width: calc(100% + var(--container-padding) * 2);
+    }
+  }
+}

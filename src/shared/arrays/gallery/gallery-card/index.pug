@@ -1,0 +1,13 @@
+mixin gallery-card(data={})
+  .gallery-card(class=data.className)
+    figure.gallery-card__image
+      img(
+        src=`@img/cards/${data.country}/${data.img}.jpg`,
+        srcset=`@img/cards/${data.country}/${data.img}@2x.jpg 2x`,
+        alt=data.title)
+    .gallery-card__main
+      .gallery-card__author!=data.author 
+      .gallery-card__title!=data.title 
+      .gallery-card__type!=data.type 
+      .gallery-card__price!=data.price
+      button.gallery-card__button В корзину

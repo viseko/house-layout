@@ -184,14 +184,13 @@ a {
   }
 }
 
-button.reset-button {
+button {
+  cursor: pointer;
+}
+
+.reset-button {
   border: 0;
   background-color: transparent;
-  cursor: pointer;
-
-  &:active {
-    opacity: 0.7;
-  }
 }
 
 img {
