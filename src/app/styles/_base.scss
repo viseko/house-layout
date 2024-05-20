@@ -34,9 +34,11 @@ body {
     font-size: $font-size-sm;
   }
 
-  &._modal-show {
-    overflow: hidden;
-    padding-right: var(--scrollbar-width);
+  &._menu-open {
+    @media (max-width: $sm) {
+      overflow: hidden;
+      padding-right: var(--scrollbar-width);
+    }
   }
 }
 
