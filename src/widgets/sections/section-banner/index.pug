@@ -1,2 +1,26 @@
 mixin section-banner(data={})
-  .section-banner(class=data.className)
+  section.section-banner.m-section(class=data.className)
+    picture
+      source(
+        media="(max-width: 440px)",
+        srcset="@img/banner/bg_mobile.jpg, @img/banner/bg_mobile@2x.jpg 2x")
+      source(
+        media="(max-width: 768px)",
+        srcset="@img/banner/bg_tablet.jpg, @img/banner/bg_tablet@2x.jpg 2x")
+      img.section-banner__background(
+        src="@img/banner/bg.jpg",
+        srcset="@img/banner/bg@2x.jpg 2x",
+        alt="")
+    .container
+      .section-banner__content 
+        .section-banner__title
+          img(
+            src="@img/banner/star.svg",
+            width="80",
+            height="80",
+            alt="")
+          h2.text-h2 Новая коллекция <br>французских авторов
+        .section-banner__text
+          p Сложно сказать, почему акционеры крупнейших компаний призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть заблокированы в&nbsp;рамках своих собственных рациональных ограничений.
+          p Принимая во&nbsp;внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.
+        a.btn.btn-accent(href="#") Ознакомиться 

@@ -1,0 +1,24 @@
+.btn.btn-accent:not(.reset-button),
+button.btn-accent:not(.reset-button) {
+  color: $cl-black;
+  background-color: #EEDB6D;
+  border-color: #EEDB6D;
+
+  &:hover {
+    color: $cl-black;
+    background-color: #FAEB97;
+  }
+
+  &:focus-visible {
+    color: $cl-black;
+    border-color: #A38314;
+  }
+
+  &:active {
+    background-color: #D9B949;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
