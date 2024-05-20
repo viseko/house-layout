@@ -1,6 +1,6 @@
 mixin gallery-card(data={})
   .gallery-card(class=data.className)
-    figure.gallery-card__image
+    a.gallery-card__image(data-fancybox href=`@img/cards/${data.country}/${data.img}_wide.jpg`)
       img(
         src=`@img/cards/${data.country}/${data.img}.jpg`,
         srcset=`@img/cards/${data.country}/${data.img}@2x.jpg 2x`,
@@ -10,4 +10,4 @@ mixin gallery-card(data={})
       .gallery-card__title!=data.title 
       .gallery-card__type!=data.type 
       .gallery-card__price!=data.price
-      button.gallery-card__button В корзину
+      button.btn.gallery-card__button В корзину

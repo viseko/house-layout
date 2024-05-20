@@ -58,6 +58,7 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "@stdlib/string-truncate": "^0.0.3",
     "air-datepicker": "^3.3.5",
     "gsap": "^3.12.0",

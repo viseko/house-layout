@@ -1,7 +1,6 @@
 @import "themes/btn-accent";
 
-button:not(.reset-button),
-.btn:not(.reset-button) {
+.btn {
   display: inline-block;
   padding: 20px 59px;
   color: $cl-green;

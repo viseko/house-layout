@@ -1,14 +1,16 @@
 // import adaptiveMove from "./modules/adaptive-move.js";
 // import checkNavigator from "./modules/check-navigator.js";
-// import calcScrollbarWidth from "./modules/calc-scrollbar-width.js";
+import calcScrollbarWidth from "./modules/calc-scrollbar-width.js";
 import calcVh from "./modules/calc-vh.js";
+import fancybox from "./modules/fancybox.js";
 
 const App = {
   modules: [
     // adaptiveMove,
     // checkNavigator,
-    // calcScrollbarWidth,
-    calcVh
+    calcScrollbarWidth,
+    calcVh,
+    fancybox
   ],
 
   components: [],
