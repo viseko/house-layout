@@ -15,7 +15,10 @@ mixin page-footer(data={})
           li 
             ul.page-footer__nav-sublist
               li 
-                a.page-footer__nav-link(href="#") Репродукции
+                +nav-link({
+                  page: "catalog",
+                  title: "Репродукции"
+                })
               li
                 a.text-label(href="#") Франция
               li
@@ -25,7 +28,10 @@ mixin page-footer(data={})
           li 
             ul.page-footer__nav-sublist
               li 
-                a.page-footer__nav-link(href="#") Новинки
+                +nav-link({
+                  page: "new",
+                  title: "Новинки"
+                })
               li
                 a.text-label(href="#") 2021
               li
@@ -33,7 +39,10 @@ mixin page-footer(data={})
           li 
             ul.page-footer__nav-sublist
               li 
-                a.page-footer__nav-link(href="#") О нас
+                +nav-link({
+                  page: "about",
+                  title: "О нас"
+                })
               li
                 a.text-label(href="#") Художники
               li

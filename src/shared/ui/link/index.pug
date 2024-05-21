@@ -5,4 +5,4 @@ mixin link(data={})
     target=(data.blank ? "_blank" : null)
     rel=(data.blank ? "noopener noreferrer" : null)
   )&attributes(data.attributes)
-    !=data.text
+    block

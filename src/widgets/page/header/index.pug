@@ -10,16 +10,19 @@ mixin page-header(data={})
         nav.page-header__nav
           ul.page-header__nav-list
             li
-              if (page === "catalog")
-                span.page-header__nav-link Репродукции
-              else
-                a.page-header__nav-link(href="catalog.html") Репродукции
+              +nav-link({
+                page: "catalog",
+                title: "Репродукции"
+              })
             li
-              if (page === "new")
-                span.page-header__nav-link Новинки
-              else
-                a.page-header__nav-link(href="new.html") Новинки
+              +nav-link({
+                page: "new",
+                title: "Новинки"
+              })
             li
-              a.page-header__nav-link(href="#") О нас
+              +nav-link({
+                page: "about",
+                title: "О нас"
+              })
         a.page-header__cart-button(type="button" title="Перейти в корзину" href="#")
           +icon("cart", 24, 24)

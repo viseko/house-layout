@@ -1,0 +1,19 @@
+extends ../app/templates/layout
+
+block vars
+  - var title = "Ink House - О нас"
+  - var page = "about"
+
+block body 
+  +inner-header({
+    title: "О нас",
+    breadcrumbs: [
+      ["О нас"]
+    ]
+  })
+  
+  +section-team
+
+block modals
+
+block scripts

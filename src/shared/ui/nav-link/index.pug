@@ -1,0 +1,5 @@
+mixin nav-link(data={})
+  if (page === data.page)
+    span.nav-link!=data.title
+  else
+    a.nav-link(href=`${data.page}.html`)!=data.title

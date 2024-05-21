@@ -92,32 +92,6 @@
         gap: 50px;
       }
     }
-
-    &-link {
-      color: $cl-black;
-      font-size: 20px;
-
-      @media (max-width: $lg) {
-        font-size: 18px;
-      }
-
-      @include hover {
-        color: $cl-green;
-      }
-    
-      &:focus-visible {
-        background-color: #D4E8D9;
-      }
-    
-      &:active {
-        color: $cl-green-dark;
-        opacity: 1;
-      }
-
-      &:not([href]) {
-        color: $cl-green;
-      }
-    }
   }
 
   &__cart-button {
