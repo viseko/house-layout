@@ -4,7 +4,7 @@
   gap: 20px;
   padding: 20px;
   background-color: $cl-green-light;
-  transition: transform $bezier 0.3s;
+  transition: transform $bezier 0.5s;
   will-change: transform;
 
   @include hover {

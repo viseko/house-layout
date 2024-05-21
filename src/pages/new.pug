@@ -1,0 +1,18 @@
+extends ../app/templates/layout
+
+block vars
+  - var title = "Ink House - Новинки"
+  - var page = "new"
+
+block body 
+  +inner-header({
+    title: "Новинки",
+    breadcrumbs: [
+      ["Новинки"]
+    ]
+  })
+  +section-banner({className: "mb-0"})
+
+block modals
+
+block scripts

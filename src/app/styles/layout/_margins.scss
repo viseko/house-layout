@@ -1,18 +1,18 @@
-@for $i from 1 through 14 {
-  .mb-#{$i} {
+@for $i from 0 through 14 {
+  .mb-#{$i}[class] {
     margin-bottom: #{$i}rem;
   }
 
-  .mt-#{$i} {
+  .mt-#{$i}[class] {
     margin-top: #{$i}rem;
   }
 
   @media (max-width: $sm) {
-    .mb-sm-#{$i} {
+    .mb-sm-#{$i}[class] {
       margin-bottom: #{$i}rem;
     }
 
-    .mt-sm-#{$i} {
+    .mt-sm-#{$i}[class] {
       margin-top: #{$i}rem;
     }
   }
