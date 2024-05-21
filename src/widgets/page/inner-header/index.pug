@@ -1,0 +1,5 @@
+mixin inner-header(data={})
+  header.inner-header(class=data.className)
+    .container.inner-header__container
+      +breadcrumbs({list: data.breadcrumbs})
+      h1!=data.title

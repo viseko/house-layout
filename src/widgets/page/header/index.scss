@@ -62,6 +62,8 @@
   }
 
   &__nav {
+    user-select: none;
+    
     @media (max-width: $sm) {
       position: absolute;
       top: 100%;
@@ -110,6 +112,10 @@
       &:active {
         color: $cl-green-dark;
         opacity: 1;
+      }
+
+      &:not([href]) {
+        color: $cl-green;
       }
     }
   }

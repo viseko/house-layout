@@ -10,7 +10,10 @@ mixin page-header(data={})
         nav.page-header__nav
           ul.page-header__nav-list
             li
-              a.page-header__nav-link(href="#") Репродукции
+              if (page === "catalog")
+                span.page-header__nav-link Репродукции
+              else
+                a.page-header__nav-link(href="catalog.html") Репродукции
             li
               a.page-header__nav-link(href="#") Новинки
             li

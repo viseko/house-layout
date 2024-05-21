@@ -1,0 +1,38 @@
+extends ../app/templates/layout
+
+block vars
+  -var title = "Ink House - Репродукции"
+  -var page = "catalog"
+
+block body
+  +inner-header({
+    breadcrumbs: [
+      ["Репродукции"]
+    ],
+    title: "Репродукции"
+  })
+  section.m-section
+    .container
+      .gallery-array
+        +catalog-card({
+          country: "france",
+          title: "Франция",
+          img: "01",
+          href: "catalog-france.html",
+        })
+        +catalog-card({
+          country: "germany",
+          title: "Германия",
+          img: "01",
+          href: "catalog-germany.html",
+        })
+        +catalog-card({
+          country: "england",
+          title: "Англия",
+          img: "01",
+          href: "catalog-england.html",
+        })
+
+block modals
+
+block scripts

@@ -1,0 +1,12 @@
+mixin breadcrumbs(data={})
+  ul.breadcrumbs(class=data.className)
+    li 
+        a(href="index.html") Главная
+    each item in data.list
+      li 
+        if (item.length === 2)
+          a(href=item[1])!=item[0] 
+        else 
+          span!=item[0]
+      
+      

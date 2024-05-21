@@ -1,0 +1,10 @@
+mixin catalog-card(data={})
+  a.catalog-card(
+    class=data.className,
+    href=data.href
+  )
+    img.catalog-card__image(
+      src=`@img/cards/${data.country}/${data.img}.jpg`,
+      srcset=`@img/cards/${data.country}/${data.img}@2x.jpg 2x`,
+      alt="")
+    .catalog-card__title!=data.title
